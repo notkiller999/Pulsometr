@@ -83,11 +83,12 @@
 			}
 		}
 	}
+	.title {
+		font-size: 36px;
+	}
 	.promo {
 		padding-bottom: 70px;
-		&__header {
-			font-size: 36px;
-		}
+
 		&__subheader {
 			font-size: 20px;
 		}
