@@ -28,7 +28,25 @@
 		&__descr {
 			font-size: 11px;
 		}
-	}
+    }
+    .consultation {
+        .title{
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            display: block;
+            margin: 36px auto;
+            width: 380px;
+            input {
+                display: block;
+                margin: 0 auto 15px auto;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -101,5 +119,18 @@
 	}
 	.advantages {
 		padding: 70px 0 60px 0;
-	}
+    }
+    .consultation {
+		padding: 60px 0 50px 0;
+        .title {
+            font-size: 20px;
+        }
+        &__descr {
+			font-size: 15px;
+			margin-top: 50px;
+        }
+        .feed-form {
+            width: 270px;
+        }
+    }
 }
