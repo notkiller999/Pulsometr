@@ -37,9 +37,12 @@
 	}
 	&__content {
 		margin-top: 60px;
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		&_active {
+			display: flex;
+		}
 	}
 	&-item {
 		width: 300px;
@@ -140,7 +143,8 @@
 		&__back {
 			position: absolute;
 			bottom: 0px;
-			left: 106px;
+			left: 50%;
+			transform: translateX(calc(-50% - 20px));
 			font-size: 14px;
 			font-weight: 500;
 			text-decoration: underline;

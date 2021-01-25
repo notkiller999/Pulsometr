@@ -8,6 +8,10 @@
 	margin: 0 auto;
 	position: relative;
 }
+
+.tns-nav {
+	display: none;
+}
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
@@ -17,4 +21,6 @@
 @import "blocks/forms";
 @import "blocks/carousel";
 @import "blocks/catalog";
+@import "blocks/reviews";
+@import "blocks/footer";
 @import "blocks/media";
