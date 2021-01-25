@@ -1,3 +1,22 @@
+
+
+const slider = tns({
+    container: '.carousel__inner',
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    controls: false,
+    nav: true,
+    navPosition: 'bottom',
+    autoHeight: false
+  });
+  document.querySelector('.prev').addEventListener('click', function () {
+    slider.goTo('prev');
+  });
+  document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo('next');
+  });
+
   (function($) {
 $(function() {
   
@@ -22,23 +41,21 @@ $(function() {
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
   
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+
+
+
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+  });
+
+  $('.button_catalog').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__subtitle').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    })
+  });
 });
 })(jQuery);
-
-const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: true,
-    navPosition: 'bottom',
-    autoHeight: false
-  });
-  document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-  });
-  document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
-  });
-
