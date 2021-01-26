@@ -165,6 +165,9 @@
 	}
 	.promo {
 		padding-bottom: 70px;
+		&__header {
+			font-size: 40px;
+		}
 
 		&__subheader {
 			font-size: 20px;
