@@ -17,7 +17,7 @@ const slider = tns({
     slider.goTo('next');
   });
 
-  (function($) {
+(function($) {
 $(function() {
   
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -84,4 +84,44 @@ $(function() {
 
     $('input[name=phone]').mask("+38 (999) 999-9999");
 
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+
+        $('form').trigger('reset');
+      });
+      return false;
+    });
+
+    
+    wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset:       100,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    })
+	wow.init();
+	
+	  $(window).scroll(function() {
+      if ($(this).scrollTop() > 1200) {
+        $('.pageup').fadeIn('slow');
+      } 
+      else {
+        $('.pageup').fadeOut('slow');
+      }
+    });
+     $("a[href^='#up']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+     });
 })(jQuery);

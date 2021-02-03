@@ -4,14 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pulsometrs</title>
-		<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-		<link rel="stylesheet" href="css/fonts.css" />
-		<link rel="stylesheet" href="css/iconmoon.css" />
-		<link rel="stylesheet" href="css/tiny-slider.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
-		<section class="promo">
+		<section id="up" class="promo">
 			<div class="container">
 				<header class="header">
 					<a href="#" class="header__logo">
@@ -35,15 +35,15 @@
 					<h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
 					<div class="promo__icons">
 						<div class="promo__icon">
-							<img src="icons/timer.png" alt="" />
+							<img src="icons/timer.png" alt="timer" />
 							Время подбора:10 минут
 						</div>
 						<div class="promo__icon">
-							<img src="icons/delivery.png" alt="" />
+							<img src="icons/delivery.png" alt="delivery" />
 							Бесплатная доставка
 						</div>
 						<div class="promo__icon">
-							<img src="icons/message.png" alt="" />
+							<img src="icons/message.png" alt="message" />
 							Ответим на все вопросы
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 				<h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
 				<div class="advantages__wrapper">
 					<div class="advantages__icon">
-						<img src="icons/cup.png" alt="" />
+						<img src="icons/cup.png" alt="cup" />
 						<div class="advantages__subtitle">Делимся опытом</div>
 						<div class="advantages__descr">
 							Наши сотрудники всегда готовы поделиться своим опытом, так как
@@ -71,7 +71,11 @@
 						</div>
 					</div>
 					<div class="advantages__icon">
-						<img src="icons/heart.png" alt="" />
+						<img
+							src="icons/heart.png"
+							class="advantages__icon_animated"
+							alt="heart"
+						/>
 						<div class="advantages__subtitle">Заботимся о здоровье</div>
 						<div class="advantages__descr">
 							Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
@@ -79,7 +83,7 @@
 						</div>
 					</div>
 					<div class="advantages__icon">
-						<img src="icons/shoe.png" alt="" />
+						<img src="icons/shoe.png" alt="shoese" />
 						<div class="advantages__subtitle">Учим бегать</div>
 						<div class="advantages__descr">
 							Помогаем с обучением правильной технике бега! Дружим с крупнейшей
@@ -109,7 +113,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="carousel">
+		<div class="carousel">
 			<div class="container">
 				<div class="carousel__inner">
 					<div>
@@ -122,10 +126,14 @@
 						<img src="img/polar-m600.jpg" alt="polar-m600" />
 					</div>
 				</div>
-				<button type="button" class="prev"><img src="icons/prev.png" /></button>
-				<button type="button" class="next"><img src="icons/next.png" /></button>
+				<button type="button" class="prev">
+					<img src="icons/prev.png" alt="previosly" />
+				</button>
+				<button type="button" class="next">
+					<img src="icons/next.png" alt="next" />
+				</button>
 			</div>
-		</section>
+		</div>
 		<section class="catalog">
 			<div class="container">
 				<h2 class="title">Каталог пульсометров</h2>
@@ -140,37 +148,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
 								<div class="catalog-item__descr">
 									Для первых шагов в тренировках, основанных на сердечном ритме
 								</div>
 								<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -184,37 +198,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
 								<div class="catalog-item__descr">
 									Пульсометр начального уровня с комфортным тканевым ремешком
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -228,37 +248,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -272,37 +298,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
 								<div class="catalog-item__descr">
 									Для первых шагов в тренировках, основанных на сердечном ритме
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -316,37 +348,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
 								<div class="catalog-item__descr">
 									Пульсометр начального уровня с комфортным тканевым ремешком
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 
@@ -361,38 +399,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -408,37 +451,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
-							</ul>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
+								<a href="#" class="catalog-item__back">назад</a>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -452,37 +501,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
-							</ul>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
+								<a href="#" class="catalog-item__back">назад</a>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -498,38 +553,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -543,38 +603,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -588,38 +653,43 @@
 					<div class="catalog-item">
 						<div class="catalog-item__wrapper">
 							<div class="catalog-item__content catalog-item__content_active">
-								<img src="img/puls-icon.png" alt="" class="catalog-item__img" />
+								<img
+									src="img/puls-icon.png"
+									alt="pulsometr"
+									class="catalog-item__img"
+								/>
 								<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 								<div class="catalog-item__descr">
 									Улучшенная версия Polar FT1, имеющая следующие улучшения:
 								</div>
 								<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
 							</div>
-
-							<ul class="catalog-item__list">
-								<li>
-									<span>
-										Вы услышите звуковое оповещение о нужном пульсе во время
-										тренировки;</span
-									>
-								</li>
-								<li>
-									<span>
-										Вы увидите информативный графический индикатор целевых
-										тренировочных зон пульса;</span
-									>
-								</li>
-								<li>
-									<span>
-										Также Вы увидите информацию о расходе калорий за
-										тренировку;</span
-									>
-								</li>
-								<li>
-									<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
-								</li>
+							<div class="catalog-item__list">
+								<ul>
+									<li>
+										<span>
+											Вы услышите звуковое оповещение о нужном пульсе во время
+											тренировки;</span
+										>
+									</li>
+									<li>
+										<span>
+											Вы увидите информативный графический индикатор целевых
+											тренировочных зон пульса;</span
+										>
+									</li>
+									<li>
+										<span>
+											Также Вы увидите информацию о расходе калорий за
+											тренировку;</span
+										>
+									</li>
+									<li>
+										<span>Вы сможете посмотреть данные по 10 тренировкам.</span>
+									</li>
+								</ul>
 								<a href="#" class="catalog-item__back">назад</a>
-							</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="catalog-item__footer">
@@ -637,8 +707,8 @@
 			<div class="container">
 				<h2 class="title">отзывы клиентов</h2>
 				<div class="reviews__items">
-					<div class="reviews__item">
-						<img src="img/irina.png" alt="" class="reviews__img" />
+					<div class="reviews__item wow animate__backInUp">
+						<img src="img/irina.png" alt="avatar" class="reviews__img" />
 						<div class="reviews__comments">
 							<h2 class="reviews__title">Ирина Иванченко</h2>
 							<h3 class="reviews__subtitle">2 полумарафона</h3>
@@ -652,8 +722,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="reviews__item">
-						<img src="img/ivan.png" alt="" class="reviews__img" />
+					<div class="reviews__item wow animate__backInUp">
+						<img src="img/ivan.png" alt="avatar" class="reviews__img" />
 						<div class="reviews__comments">
 							<h2 class="reviews__title">Иван Сёмочкин</h2>
 							<h3 class="reviews__subtitle">1 полумарафон</h3>
@@ -667,8 +737,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="reviews__item">
-						<img src="img/july.png" alt="" class="reviews__img" />
+					<div class="reviews__item wow animate__backInUp">
+						<img src="img/july.png" alt="avatar" class="reviews__img" />
 						<div class="reviews__comments">
 							<h2 class="reviews__title">Юлия Дашкина</h2>
 							<h3 class="reviews__subtitle">2 полумарафона</h3>
@@ -689,15 +759,11 @@
 		</section>
 		<footer class="footer">
 			<iframe
+				class="footer__map"
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430307459347!2d37.644807315429745!3d55.768397998257214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1611542275919!5m2!1sru!2sua"
-				width="100%"
-				height="630"
-				frameborder="0"
-				style="border: 0"
-				allowfullscreen=""
-				aria-hidden="false"
-				tabindex="0"
-			></iframe>
+				allowfullscreen
+			>
+			</iframe>
 			<div class="footer__info">
 				<address class="footer__adr">Москва, Мясницкий проезд, д.3с1</address>
 				<a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -751,10 +817,12 @@
 				</div>
 			</div>
 		</div>
+		<a href="#up" class="pageup"><img src="icons/up.svg" alt="up" /></a>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
